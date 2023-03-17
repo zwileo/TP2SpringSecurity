@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.inti.model.Chambre;
 import com.inti.model.Salarie;
 import com.inti.repository.ISalarieRepository;
 
@@ -27,5 +28,11 @@ public class SalarieController {
 		isr.save(s);
 		
 		return "redirect:/createSalarie";
+	}
+	
+	@GetMapping("louerChambre")
+	public String louerChambre(@ModelAttribute("chambre") Chambre c)
+	{
+		return "louerchambre";
 	}
 }

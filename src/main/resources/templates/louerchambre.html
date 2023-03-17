@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" action="louerChambre" modelAttribute="chambre">
+	
+		<div class="mb-3">
+			<label for="idChambre" class="form-label">id de la chambre</label> 
+			<input type="number" name="idChambre" class="form-control" id="idChambre">
+		</div>
+		<div class="mb-3">
+			<label for="numChambre" class="form-label">numero de chambre</label> 
+			<input type="text" name="numChambre" class="form-control" id="numChambre">
+		</div>
+		<div class="mb-3">
+			<label for="superficie" class="form-label">superficie</label> 
+			<input type="number" name="superficie" class="form-control" id="superficie">
+		</div>
+		<div class="mb-3">
+			<label for="etage" class="form-label">etage</label> 
+			<input type="number" name="etage" class="form-control" id="etage">
+		</div>
+		<div class="mb-3">
+			<label for="prix" class="form-label">prix</label> 
+			<input type="number" name="prix" class="form-control" id="prix">
+		</div>
+
+		
+		<button type="submit" class="btn btn-outline-success btn-sm">Valider</button>
+		<button type="reset" class="btn btn-outline-secondary btn-sm">Annuler</button>
+
+	</form>
+
+</body>
+</html>
+
+<!-- chambres (id, numero, superficie, etage, disponibilite, prix) -->

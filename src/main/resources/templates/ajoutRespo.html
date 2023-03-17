@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{/ajout}" method="post" modelAttribute="responsable">
+
+		<label>nom</label>
+		<input type="text" name="nom">
+			
+		
+		<button type="submit">Valider</button>
+	</form>
+
+
+</body>
+</html>

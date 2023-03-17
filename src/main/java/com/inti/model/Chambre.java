@@ -21,4 +21,6 @@ public class Chambre {
 	private int etage;
 	private boolean disponibilite;
 	private double prix;
+	
+	
 }

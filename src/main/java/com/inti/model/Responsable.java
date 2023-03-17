@@ -1,5 +1,7 @@
 package com.inti.model;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

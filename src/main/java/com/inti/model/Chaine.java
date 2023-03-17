@@ -1,6 +1,11 @@
 package com.inti.model;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.OneToMany;
@@ -13,12 +18,12 @@ import lombok.NoArgsConstructor;
 @Table
 @Data @AllArgsConstructor @NoArgsConstructor 
 public class Chaine {
-	
-	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
 	private String nom; 
 	
-	@OneToMany
-	@JoinTable(joinColumns = @JoinColumn(name ="idH"))
-	private Hotel hotel;
+	@OneToMany(mappedBy = "chaine")
+	private List<Hotel> lHotel;
 
 }

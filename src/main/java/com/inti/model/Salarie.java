@@ -37,6 +37,6 @@ public class Salarie {
 	
 	@ManyToOne
 	@JoinColumn(name="idH")
-	
+	private Hotel hotel;
 	
 }

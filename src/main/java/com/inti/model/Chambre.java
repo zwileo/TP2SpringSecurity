@@ -28,8 +28,8 @@ public class Chambre {
 	@JoinColumn(name="id_hotel")
 	private Hotel hotel;
 	
-//	@ManyToOne
-//	@JoinColumn(name="id_client")
-//	private Client client;
-	
+	@ManyToOne
+	@JoinColumn(name="idClient")
+	private Client client;
+
 }

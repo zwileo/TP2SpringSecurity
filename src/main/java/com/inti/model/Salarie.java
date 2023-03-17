@@ -28,6 +28,8 @@ public class Salarie {
 	public LocalDate dateEmbauche;
 	
 	
+	
+	
 	public Salarie(String type, LocalDate dateNaissance, LocalDate dateEmbauche) {
 		super();
 		this.type = type;

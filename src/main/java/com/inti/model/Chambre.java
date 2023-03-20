@@ -11,6 +11,7 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 @Entity @Table
 @Data @NoArgsConstructor @AllArgsConstructor
@@ -21,6 +22,7 @@ public class Chambre {
 	private int numero;
 	private double superficie;
 	private int etage;
+	@NonNull
 	private boolean disponibilite;
 	private double prix;
 	
